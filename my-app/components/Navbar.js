@@ -45,10 +45,10 @@ const Navbar = ({Connect, accountAddress, isConnected}) => {
 
         <ul className = "ulNav ulFlexRow">
             <li className = "liNav" id = "lightModeClick">
-                      <Image src = "/LightModePoly.png" width={32} height = {32}/>
+                      <Image src = "/LightModePoly.png" alt ="polyGon" width={32} height = {32}/>
             </li>
             <li className = "liNav">
-                       <Image src = "/DarkmodePoly.png" width={32} height = {32}/>
+                       <Image src = "/DarkmodePoly.png" alt ="polyGon" width={32} height = {32}/>
             </li>
         </ul> 
         </div>
@@ -68,13 +68,13 @@ const Navbar = ({Connect, accountAddress, isConnected}) => {
         <div className = "connectWalletDiv">
         <ul className = "ulNav ">
             <li className = "liNav " >
-                    <img className =  {`polyConnect ${polyConnect ? 'selected' : " "} `} src = "/Polygonwallet.png" />
+                    <img className =  {`polyConnect ${polyConnect ? 'selected' : " "} `} src = "/Polygonwallet.png" alt = "polyWallet"/>
             </li>
             <li className = "liNav connectWallet ">
                 
                 {/* Display WHen ViewPort Gets Smaller */}
                 <div onClick={showNav}   className = "menu-Burger">
-                    <Image src = '/BurgerMenu.png' width={32} height = {32}></Image>
+                    <Image src = '/BurgerMenu.png' alt ="burgerMenu" width={32} height = {32}></Image>
                 </div>
 
                 <div  className = {`hamburger_Div ${navigation ? 'hamburger_Div_Shown' : "" }`}>

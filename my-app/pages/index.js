@@ -202,7 +202,7 @@ const mint = async() => {
 
       </div>
     <div className = "imageSphere">
-        <Image src = "/Group.png" width={900} height = {900}></Image>
+        <Image src = "/Group.png" alt = "group" width={900} height = {900}></Image>
       </div>
     </div>
 
@@ -225,7 +225,7 @@ const mint = async() => {
               <div className = "whatIDo">
               <h2>Skills </h2>
             </div>
-              <Image className = "skills_Image" src = "/Skills.png" width={290} height ={250} />
+              <Image className = "skills_Image" alt ="Skills" src = "/Skills.png" width={290} height ={250} />
                 <div className = "skill_Card">
                     <div className = "card">
                       <div className = "card1">
@@ -259,7 +259,7 @@ const mint = async() => {
                             EtherJs 
                           </div>
                         <div className = "poly">
-                            <Image  className='polyGon' src = '/PolyGon.png' width={14} height ={14}></Image>
+                            <Image  className='polyGon' alt = "polyGon" src = '/PolyGon.png' width={14} height ={14}></Image>
                           </div>
                             </div>
                       <div className = "card1">
