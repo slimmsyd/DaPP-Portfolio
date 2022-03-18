@@ -84,7 +84,7 @@ export default function Contact() {
                     <div className = "contactDiv"> 
                         <form onSubmit =  {submitForm} className = "formDiv">
                         <label htmlFor='name'>Name</label>
-                            <input value = {formState.name} className='email' type = "text" id = "name" size = "60" onChange={updateFormControl} required></input>
+                            <input value = {formState.name} className='email'id = "name" size = "60" onChange={updateFormControl} required></input>
                         {/* <label htmlFor='email'>Email</label>
                             <input value ={formState.email} onChange={updateFormControl} className='email' type = "email" id = "email" size = "60"  required></input>
                             <label htmlFor='message'>Message</label>
