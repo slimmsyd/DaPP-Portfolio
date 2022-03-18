@@ -290,7 +290,6 @@ const mint = async() => {
 
               <Project />
               <Mint />
-              <Contact />
      
     </div>
     </div>
