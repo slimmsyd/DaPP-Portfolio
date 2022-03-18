@@ -1,0 +1,107 @@
+
+
+.nav { 
+    font-family:var(--MainFont) ;
+    color: var(--MainColor);
+    font-size: var(--navSize);
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    box-shadow: 0px 8px 4px rgba(173, 167, 167, 0.25);
+    justify-content: space-between;
+    max-width: 100%;
+}
+#lightModeClick { 
+    transform: translateY(6px);
+}
+
+.ulNav {
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    flex-direction: row ;
+}
+.ulFlexRow { 
+    display: flex;
+    flex-direction: column;
+    flex-direction: 2;
+
+}.ulFlex2 { 
+    display: flex;
+    justify-content: center;
+    flex-direction: row !important;
+}
+.liNav { 
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    color: var(--MainColor)
+}
+.liNav button {
+    border: none;
+    background-color: transparent;
+    font-size: var(--navSize);
+    font-family: var(--MainFont);
+    color : var(--MainColor);
+    cursor: pointer;
+    pointer-events: all;
+}
+.liNav > span { 
+    overflow: visible !important;
+    margin: 0px 2rem !important;
+    transform: translateY(4px);
+
+}
+
+.connectWalletDiv { 
+    width: 400px;
+}
+.connectWallet {
+    margin: 0px 2rem
+}
+._navigation { 
+    padding: 0px 1.5rem 0px 1.5rem;
+}
+.afterLine::before {
+    content: "";
+    height: 4.3px;
+    width: 5rem;
+    background-color: #222222;
+    position: absolute;
+    transform: translate(-3.5px,2.2rem);
+    transition: transform ease 0.5s;
+}
+
+.afterLineTrans::before { 
+    content: "";
+    height: 4.3px;
+    width: 5rem;
+    background-color: #222222;
+    position: absolute;
+    transform: translate(6.3rem,2.2rem);
+    transition: transform ease 0.5s;
+}
+
+.polyConnect {
+    transition: all ease 0.5s;
+    overflow: visible !important;
+}
+.selected { 
+    transform: rotate(180deg) !important;
+
+}
+
+/* DIVER SECTION */
+
+.divide {
+    padding-top: 10rem;
+    display: flex; 
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.divideLine { 
+    width: 550px;
+    height: 5px;
+    background-color: #434343;
+}

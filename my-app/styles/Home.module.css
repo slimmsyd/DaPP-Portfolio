@@ -1,0 +1,374 @@
+
+
+/* HEADING */
+
+.body_Wrapper {
+  margin: 0 3rem
+}
+
+.home { 
+  padding-bottom: 10rem;
+}
+.home_Header { 
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+  padding-top: 85px;
+  gap: 50px;
+  
+}
+
+/* SKILLS IMG */
+.skills_Image { 
+  display: none;
+}
+
+/* SKILLS IMG */
+
+.home_Header img { 
+  width: 70%;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.imageSphere { 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+}
+
+.heading_Contents { 
+  display: flex;
+  padding-left: 10rem;
+  flex-direction: column;
+  font-family: var(--MainFont);
+  flex-basis:content;
+
+}
+
+
+.heading_Contents h1 { 
+  font-size: 98px    ;
+  margin: 0;
+  font-weight: 600;
+}
+.heading_Contents h2 { 
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.heading_Contents h3 { 
+  font-size: 27px;
+  color: var(--descriptonColor);
+  font-weight: 400;
+}
+
+.heading_Intro { 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+
+/* .heading_Contents h1::before { 
+  content: "";
+  height: 100px;
+  width: 10px;
+  background-color: #222222;
+  position: absolute;
+  transform: translateX(-20px);
+} */
+
+.heading_Contents p {
+  font-size: 18px;
+  color: var(--descriptonColor);
+  margin: 0;
+}
+
+
+
+
+.explore { 
+  margin-top: 100px;
+  background-color: #222222;
+  border: 1px solid #222222;
+  width: 400px;
+  height: 88px;
+  color: #ffff;
+  font-family: var(--MainFont);
+  font-size: 24px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+  pointer-events: all;  
+} 
+.explore:hover {
+background-color: #ffff;
+color: #222222;
+
+}
+/* HEADING */
+
+.body { 
+  height:  50vh;
+  font-family: var(--MainFont);
+  display: flex;
+  flex-direction: column;
+}
+.whatIDo {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+}.whatIDo h2 { 
+  font-weight: 400;
+}
+
+.main_Contents {
+  padding: 0rem 2.4rem 0rem 2.4rem; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+
+}
+#shape {
+  position: absolute;
+  transform: translateX(-50rem);
+  z-index:-1;
+}
+
+.development { 
+  width: 450px;
+  height: 350px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.development h4 { 
+  margin-bottom: 0;
+}
+.development p {
+  font-size: 16px;
+  color: #434343;
+}
+
+/* .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+
+/* SECTION BODDY */
+
+/* SECTION SKILLS */
+
+.skills {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill_Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+
+}
+
+.card {
+  height: 475px;
+  width: 620px;
+  border: 1px solid  #C4C4C4;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 35px;
+   padding: 3rem;
+}
+
+.card1 {
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   height: 543px;
+   border-radius: 5px;
+  
+   
+
+}
+
+.subCard { 
+   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 180px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--navSize);
+  font-family: var(--MainFont);
+  background-color: #F9F9F9;   
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 2rem;
+  transition: all ease 0.5s;   
+}
+
+.subCard:active { 
+   background-color: #222222;
+   color: #ffff;
+}
+.poly {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   flex: 2;
+   
+}
+
+.card_Top { 
+  margin-top: 6rem;
+
+
+}
+
+/* SECTION SKILLS */
+
+
+/* socials */
+.socials {
+  position: fixed;
+  right: 20px
+}
+.socials ul {
+  list-style-type: none;
+} 
+
+.socials li { 
+  cursor: pointer;
+  margin: 2rem 0 0 0;
+}
+
+
+/* socials */
+
+
+
+/* MOBILE RESPONSIVESNESS */
+@media  screen and (max-width: 1440px) {
+  .home_Header h1{
+      font-size: 54px;
+  }
+
+  .home_Header h3 {
+      font-size:  24px;
+  }
+
+  
+}
+@media screen and (max-width: 912px) {
+  .development { 
+      width: 100%;
+  }
+  .development img  { 
+      object-fit: cover;
+  }
+  
+}
+@media screen and (max-width: 900px) {
+    .socials, .imageSphere { 
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:  997px) {
+  .heading_Contents { 
+      padding-left: 0;
+  }
+  .home_Header { 
+      max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 524px) { 
+
+  .explore { 
+      width: 100%;
+  }
+
+  .home { 
+   padding-bottom: 0;
+  }
+
+  .clear {
+      display: none !important;
+  }
+
+  .development {
+      width: 100%;
+  }
+
+  .skills_Image { 
+      display: inline;
+  }
+  .skills { 
+      align-items: stretch;
+  }
+
+  .skill_Card { 
+      display: none;
+  }
+  .card { 
+      max-width: 210px;
+  }
+
+.subCard { 
+  font-size: 14px;
+  width: 100%;
+
+}
+.heading_Contents { 
+  align-items: center;
+  justify-content: center;
+}
+.heading_Contents button { 
+  max-width: 350px;
+}
+
+  .mintSection img { 
+      display: none;
+  }
+  .main_Contents, .whatIDo { 
+      flex-direction: column;
+      text-align: center;
+  }.body {
+      height: 100vh;
+
+  }
+  .heading_Contents {
+      text-align: center;
+  }
+  .heading_Contents { 
+      width: 100%;
+  }
+  .development { 
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+
+
+/* MOBILE RESPONSIVESNESS */
