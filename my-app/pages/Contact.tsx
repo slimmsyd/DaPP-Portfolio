@@ -85,13 +85,13 @@ export default function Contact() {
                         <form onSubmit =  {submitForm} className = "formDiv">
                         <label htmlFor='name'>Name</label>
                             <input value = {formState.name} className='email' type = "text" id = "name" size = "60" onChange={updateFormControl} required></input>
-                        <label htmlFor='email'>Email</label>
+                        {/* <label htmlFor='email'>Email</label>
                             <input value ={formState.email} onChange={updateFormControl} className='email' type = "email" id = "email" size = "60"  required></input>
                             <label htmlFor='message'>Message</label>
 
                            
                             <textarea value = {formState.message} onChange={updateFormControl} id = "message" rows="30" cols = "60"></textarea>
-                            <button disabled = {submitting} className='text' type = "submit" id = "text" > {submitting ? "Submitting" : 'Submit'} </button>
+                            <button disabled = {submitting} className='text' type = "submit" id = "text" > {submitting ? "Submitting" : 'Submit'} </button> */}
                         </form>
                            
                         </div>

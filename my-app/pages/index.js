@@ -82,6 +82,86 @@ useEffect(() => {
   }
 })
 
+// NFT contract Mint Functions Below
+
+//getOwner Function
+
+const getOwner = async() => { 
+  try { 
+    //No need for a signer in this function
+    const provider = await getProviderOrSigner();
+
+    const nftContract = new Contract(NFT_ADDRESS, abi, provider);
+    //call owner of the function 
+    const _owner = await nftContract.owner();
+    //get signer now! to exttract the address of the currenlty connected metamaks
+    const signer = await getProviderOrSigner(true);
+    const address = await signer.getAddress();
+    if(address.toLowerCase() === _owner.toLowercase()) {
+      setIsOwner(true);
+      
+    }
+
+
+
+  }catch(err) { 
+    console.log(err)
+  }
+
+
+};
+
+
+//getTokenIdsMinted => fetches all the number of tokens arlready claimed
+
+const getTokenIdMinted = async() => { 
+  try { 
+
+    const provider = await getProviderOrSigner();
+    const nftContract = new Contract(NFT_ADDRESS, abi, provider);
+    const _tokenIds = await nftContract.tokenIds();
+    setTokenIdsMinted(_tokenIds.toString());
+  }catch(err) { 
+    console.log(err)
+  }
+
+};
+
+
+
+//mint function claims the NFT
+
+
+const mint = async() => { 
+  try { 
+    //Signer in this transaction 
+    const signer = getProviderOrSigner(true);
+    //new instance of nft contract
+    const nftContract= new Contract(NFT_ADDRESS, abi, providers);
+
+    //call the mint function from contract
+    const tx = await nftContract.mint({
+        //Value signifies the cost of the NFT
+        //parse string to etther using the utilis library from ether.js 
+      value: utils.parseEther("0.01")
+    });
+    setLoading(true);
+    //wait for transaction to get mined 
+    await tx.wait();
+    setLoading(false);
+    
+
+
+
+
+
+
+  }catch(err) { 
+    console.error(err)
+  }
+}
+
+
 
 
 
